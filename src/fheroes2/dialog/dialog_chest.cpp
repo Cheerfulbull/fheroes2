@@ -26,7 +26,7 @@
 
 #include "agg_image.h"
 #include "cursor.h"
-#include "dialog.h"
+#include "dialog.h" // IWYU pragma: associated
 #include "game_hotkeys.h"
 #include "heroes.h"
 #include "icn.h"
@@ -97,7 +97,7 @@ bool Dialog::SelectGoldOrExp( const std::string & header, const std::string & me
     text.draw( pos.x + sprite_gold.width() / 2 - text.width() / 2, pos.y + 4, display );
 
     // sprite2
-    pos.x = box.GetArea().x + box.GetArea().width / 2 + 30;
+    pos.x = box.GetArea().x + box.GetArea().width / 2 + 38;
     fheroes2::Blit( sprite_expr, display, pos.x, pos.y - sprite_expr.height() );
     // text
     text.set( std::to_string( expr ) + " (" + _( "Need: " ) + std::to_string( Heroes::GetExperienceFromLevel( hero.GetLevel() ) - hero.GetExperience() ) + ")",
