@@ -507,6 +507,7 @@ namespace
         case fheroes2::SupportedLanguage::Russian:
         case fheroes2::SupportedLanguage::Slovak:
         case fheroes2::SupportedLanguage::Ukrainian:
+        case fheroes2::SupportedLanguage::Danish:
             addExtraStandardButtons( buttons, layoutType, isEvilInterface, isExtraLanguageSupported, language );
             break;
         default:
